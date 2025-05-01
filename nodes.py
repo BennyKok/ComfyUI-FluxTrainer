@@ -911,7 +911,7 @@ class FluxTrainLoop:
                     break_at_steps = target_global_step,
                     epoch = network_trainer.current_epoch.value,
                 )
-                print("Steps done: " + steps_done)
+                print(f"Steps done: {steps_done}")
                 #pbar.update(steps_done)
                
                 # Also break if the global steps have reached the max train steps
